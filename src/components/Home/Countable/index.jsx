@@ -20,6 +20,11 @@ class Countable extends Component{
             count:this.state.count-1
         })
     }
+    resetCount(){
+        this.setState({
+            count:this.state.count*0
+        })
+    }
     render() {
         return(
             <div>
@@ -33,13 +38,23 @@ class Countable extends Component{
                     this.incrementCount()
                     }
                 }>Increase!</Button>
+
                 <Button variant="outlined" onClick={()=>{
                     console.log("click")
                     this.decrementCount()
                 }
                 } style={{marginLeft:'15px'} }
                >Decrease!</Button>
+
+                <Button variant="outlined" color="error" onClick={()=>{
+                    console.log("click")
+                    this.resetCount()
+                }
+                } style={{marginLeft:'15px'}}>Reset!</Button>
+
             </div>
+
+
         )
     }
 }
