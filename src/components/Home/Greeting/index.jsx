@@ -1,6 +1,6 @@
 import {Component} from "react";
 import Typography from '@mui/material/Typography';
-import ijse from "../../../assets/img/ijse.png"
+import ijse from "../../../assets/img/ijse.jpg"
 import {styleSheet} from "./style";
 import {withStyles} from "@mui/styles";
 

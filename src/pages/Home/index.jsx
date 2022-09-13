@@ -1,6 +1,8 @@
 import Greeting from "../../components/Home/Greeting";
 
-import {Component} from "react";
+import {Component,Fragment} from "react";
+import Countable from "../../components/Home/Countable";
+import {Divider} from "@mui/material";
 
 class HomePage extends Component{
     constructor(props) {
@@ -8,7 +10,11 @@ class HomePage extends Component{
     }
     render() {
         return(
-            <Greeting name="IJSE"/>
+            <Fragment>
+                <Greeting name="IJSE"/>
+                <Divider light/>
+                <Countable/>
+            </Fragment>
 
         )
     }
