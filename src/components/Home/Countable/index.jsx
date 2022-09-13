@@ -15,6 +15,11 @@ class Countable extends Component{
             count:this.state.count+1
         })
     }
+    decrementCount(){
+        this.setState({
+            count:this.state.count-1
+        })
+    }
     render() {
         return(
             <div>
@@ -28,6 +33,12 @@ class Countable extends Component{
                     this.incrementCount()
                     }
                 }>Increase!</Button>
+                <Button variant="outlined" onClick={()=>{
+                    console.log("click")
+                    this.decrementCount()
+                }
+                } style={{marginLeft:'15px'} }
+               >Decrease!</Button>
             </div>
         )
     }
