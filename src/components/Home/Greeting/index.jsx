@@ -1,14 +1,17 @@
 import {Component} from "react";
 import Typography from '@mui/material/Typography';
 import ijse from "../../../assets/img/ijse.png"
+import {styleSheet} from "./style";
+import {withStyles} from "@mui/styles";
 
 class Greeting extends Component{
     constructor(props) {
         super(props);
     }
     render() {
+        const {classes}=this.props;
         return(
-            <div>
+            <div className={classes.container}>
                 <div>
                     <Typography variant="h3" gutterBottom>
                        Hello {this.props.name}
@@ -22,4 +25,4 @@ class Greeting extends Component{
         )
     }
 }
-export default Greeting
+export default withStyles(styleSheet) (Greeting)
