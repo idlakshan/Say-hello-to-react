@@ -1,4 +1,6 @@
-const {Component} = require("react");
+import Greeting from "../../components/Home/Greeting";
+
+import {Component} from "react";
 
 class HomePage extends Component{
     constructor(props) {
@@ -6,9 +8,7 @@ class HomePage extends Component{
     }
     render() {
         return(
-            <div>
-                <h1>Hello From HomePage</h1>
-            </div>
+            <Greeting name="IJSE"/>
 
         )
     }
