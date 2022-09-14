@@ -1,8 +1,9 @@
 import React from "react";
-import HomePage from "../pages/Home/index"
+import Login from "../pages/Login/index";
 function App() {
   return (
-    <HomePage />
+    //<HomePage/>
+     <Login />
   );
 }
 
